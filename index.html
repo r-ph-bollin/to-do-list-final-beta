@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>>JUST DO IT</title>
+    <title>JUST DO IT</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
     <script
       src="https://kit.fontawesome.com/4958ce2e38.js"
@@ -18,27 +18,28 @@
     <div class="wrapper">
       <div class="logo"><h1>TO DO LIST</h1></div>
 
-      <div class="ul-list">
+      <div class="list">
         <ul>
           <li>
             <div class="checkbox">
-              <input type="checkbox" id="Apples" name="Apples" checked />
-              <label for="Apples">Apples</label>
+              <input type="checkbox" id="Apples" name="Apples"/>
+              <label>Apples</label>
             </div>
             <div class="delete">
               <i class="fa-solid fa-circle-xmark"></i>
             </div>
           </li>
         </ul>
-
+    </div>
         <div class="new-task">
           <div class="task-bar">
-            <input type="text" class="listed-item" />
-          </div>
-          <div class="add-button"><button>ADD</button></div>
-        </div>
-      </div>
-    </div>
+            <form action="">
+              <input type="text" placeholder="To-do list" class="task" name="task" id="task">
+              <button>Add</button>
+          </form>
+       </div>
+   
+    <script src="source.js"></script>
   </body>
 </html>
 

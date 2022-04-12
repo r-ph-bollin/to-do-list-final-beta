@@ -1,0 +1,27 @@
+.wrapper {
+  border-style: solid;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  border-style: solid;
+  color: red;
+}
+
+.ul-list {
+  border-style: solid;
+  color: blue;
+}
+
+li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.new-task {
+  border-style: solid;
+  display: flex;
+  flex-direction: row;
+}

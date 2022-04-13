@@ -25,11 +25,19 @@ document.querySelector('button').onclick = function(e) {
             </li>
            `;
   
-        let current_tasks = document.querySelectorAll(".delete");
-        for(let i=0; i<current_tasks.length; i++){
-            current_tasks[i].onclick = function(){
-                this.parentNode.remove();
-            }
-        }
+        
     }
+    
 }
+
+            let list = document.querySelector(".list");
+        
+                list.onclick = function(e){
+                    console.log(e.target)
+                //this.parentNode.remove();
+                if (e.target.classList.contains("fa-circle-xmark")) {
+                   e.target.parentNode.parentNode.remove()
+                }
+            }
+            
+        

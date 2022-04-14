@@ -1,32 +1,166 @@
+body {
+font-family: 'Press Start 2P', cursive;
+font-family: 'Space Mono', monospace;
+display: flex;
+  flex-direction: column;
+  align-items:center;
+  align-content: center;
+  background-color: #363054;
+  height: auto;
+  max-height: 150%;
+  overflow: auto;   
+}
+
+.tab {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: #1E1F24;
+  
+}
+
+.tab button {
+  background-color: inherit;
+  color: whitesmoke;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-family: 'Space Mono', monospace;
+  font-weight: 700;
+  height: 48px;
+  width: 34%
+}
+
+.tab button.active {
+  background-color: #FDFCFD;
+  color: #1E1F24;
+  border: 0rem;
+  border-bottom: 4px solid #3863F2;
+  font-family: 'Space Mono', monospace;
+  font-weight: 700;
+  height: 48px;
+  width: 34%
+}
+
+
 .wrapper {
-  border-style: solid;
+  width: 320px;
+  box-shadow: 0px 20px 68px rgba(56, 99, 242, 0.35);
   display: flex;
   flex-direction: column;
+  background-color: #1E1F24;
+  border-radius: 8px;
 }
 
-.logo {
-  border-style: solid;
-  color: red;
+
+.ul {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  list-style-type: none;
 }
 
-.ul-list {
-  border-style: solid;
-  color: blue;
+.placeholder {
+  transition: margin-right 2s ease-in-out .5s;
+}
+
+.fa-circle-xmark {
+  color: #E59B49;
+  cursor: pointer;
+}
+
+.fa-circle-xmark:hover {
+  color: #ED7673;
+  cursor: pointer;
 }
 
 .list {
-  border-style: solid;
-  color: blue;
+  margin-left: -40px !important;
 }
 
 li {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  font-size: 16px;
+  color: white;
+  background-color: #2B2E3C;
+  margin: 16px;
+  height: auto;
+  word-break: break-all;
+  padding: 16px;
+  border-radius: 4px;
+
 }
 
 .new-task {
-  border-style: solid;
+  border: 2px solid #9F3CF0;
+  border-radius: 4px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px;
+  margin: 8px;
+  background-color: #363054;
+
+}
+
+.task {
+border: 2px solid white;
+border-radius: 4px;
+font-family: 'Space Mono', monospace;
+  font-weight: 500;
+  height: 36px;
+  width: 87%;
+  background-color: inherit;
+  margin: 8px;
+  color: white;
+  padding: 8px;
+}
+
+.add {
+  background: #9F3CF0;
+border-radius: 76px;
+border: 0px;
+font-family: 'Space Mono', monospace;
+font-weight: 700;
+text-transform: uppercase;
+font-size: 18px;
+color: white;
+width: 95%;
+margin: 8px;
+height: 48px;
+  transition: 0.3s;
+
+}
+
+.add:hover {
+  cursor: pointer;
+  background-color: #1E1F24;
+}
+
+.header {
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
+  background-color: #ED7673;
+  border-radius: 8px 8px 0px 0px;;
+}
+
+h1 {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 24px;
+  color: #1E1F24;
+}
+
+h2 {
+  font-size: 12px;
+  color: #1E1F24;
+  line-height: normal;
+  align-self: center;
 }
